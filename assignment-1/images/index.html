@@ -58,8 +58,8 @@
                     <br/>
                     <!-- Postal or Zip Code -->
                     <label for="postal">Postal/Zip Code:</label>
-                    <input type="text" id="postal" name="postal" placeholder="Postal Code" required />
-                    <br/>
+                    <input type="text" id="postal" name="postal" placeholder="Postal/Zip Code" required />
+                    <br/><br/>
                     <!-- Country -->
                     <label for="country">Country:</label>
                     <select id="country" name="country" required>
@@ -84,13 +84,26 @@
                 <br/>
 
             <!-- Pizza Details -->
-                <!-- Crust -->
-                <!-- Sauce -->
-                <!-- Toppings -->
-                <!-- Number of Pizzas -->
+            <fieldset>
+                <legend>Pizza Details</legend>
 
-            <!-- Delivery Instructions -->
+                    <!-- Number of Pizzas -->
+                    <p>For more than 10 pizzas please call!</p>
+                    <label for="quantity">Number of Pizzas:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" />
 
+                    <!-- Size -->
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small (6 slices)</option>
+                        <option value="medium">Medium (8 slices)</option>
+                        <option value="large">Large (12 slices)</option>
+                    </select>
+                    <br/>
+                    <!-- Crust -->
+                    <!-- Sauce -->
+                    <!-- Toppings -->
+            </fieldset>
             </form>   
         </main>
 
