@@ -22,6 +22,7 @@
                 <!-- Customer Information -->
                 <fieldset>
                     <legend>Customer Information</legend>
+                    
                     <!-- Name Field -->
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" required />
@@ -40,6 +41,7 @@
                 <!-- Address Fields -->
                 <fieldset>
                     <legend>Address</legend>
+
                     <!-- Address Line 1 -->
                     <label for="address1">Address Line 1:</label>
                     <input type="text" id="address1" name="address1" placeholder="Street address" required />
@@ -73,6 +75,7 @@
                 <!-- Order Method -->
                 <fieldset>
                     <legend>Order Method</legend>
+
                     <!-- Radial Button Options (Pickup or Delivery) -->
                     <label><input type="radio" name="order-method" value="pickup" checked /> Pickup</label>
                     <label><input type="radio" name="order-method" value="delivery" /> Delivery</label>
@@ -83,9 +86,9 @@
                 </fieldset>
                 <br/>
 
-            <!-- Pizza Details -->
-            <fieldset>
-                <legend>Pizza Details</legend>
+                <!-- Pizza Details -->
+                <fieldset>
+                    <legend>Pizza Details</legend>
 
                     <!-- Number of Pizzas -->
                     <p>For more than 10 pizzas please call!</p>
@@ -100,7 +103,7 @@
                         <option value="large">Large (12 slices)</option>
                     </select>
                     <br/>
-                    
+                        
                     <!-- Shape -->
                     <p>Shape:</p>
                     <label><input type="radio" name="shape" value="round" checked /> Round</label>
@@ -122,8 +125,19 @@
                         <option value="ranch">Pesto</option>
                         <option value="bbq">BBQ</option>
                     </select>
+                    <br/>
+
+                    <!-- Toppings -->
+                    <p>Toppings:</p>
+                    <label><input type="checkbox" name="toppings" value="pepperoni" /> Pepperoni</label>
+                    <label><input type="checkbox" name="toppings" value="bacon" /> Bacon</label>
+                    <label><input type="checkbox" name="toppings" value="mushrooms" /> Mushrooms</label>
+                    <label><input type="checkbox" name="toppings" value="onions" /> Onions</label>
+                    <label><input type="checkbox" name="toppings" value="peppers" /> Green Peppers</label>
+                    <label><input type="checkbox" name="toppings" value="extra-cheese" /> Extra Cheese</label>
+                    <label><input type="checkbox" name="toppings" value="olives" /> Olives</label>   
                     <br/><br/>
-            </fieldset>
+                </fieldset>
             </form>   
         </main>
 
