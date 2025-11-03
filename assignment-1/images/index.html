@@ -5,18 +5,84 @@
         <meta charset="UTF-8" />
         <title>The HTML Pizza Company</title>
     </head>
+
     <!-- Visible Content -->
     <body>
         <!-- Header -->
         <header>
             <h1>Welcome to The HTML Pizza Company</h1>
-            <p>Order your pizza below!</p>
+            <h3>Order your pizza below!</h3>
         </header>
+
         <!-- Main -->
         <main>
-            <!-- Pizza Order Form -->
+            <!-- Order of Form -->
+            <form action="order-confirmation.html" method="post">
+                
                 <!-- Customer Information -->
-            
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <!-- Name Field -->
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required />
+                    <br/>
+                    <!-- Phone Number Field -->
+                    <label for="phone">Phone:</label>
+                    <input type ="tel" id="phone" name="phone" required />
+                    <br/>
+                    <!-- Email Field -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                    <br/>
+                </fieldset>
+                <br/>
+
+                <!-- Address Fields -->
+                <fieldset>
+                    <legend>Address</legend>
+                    <!-- Address Line 1 -->
+                    <label for="address1">Address Line 1:</label>
+                    <input type="text" id="address1" name="address1" placeholder="Street address" required />
+                    <br/>
+                    <!-- Address Line 2 -->
+                    <label for="address2">Address Line 2:</label>
+                    <input type="text" id="address2" name="address2" placeholder="Apartment, suite, unit, etc. (optional)" />
+                    <br/><br/>
+                    <!-- City -->
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="City" required />
+                    <br/>
+                    <!-- Province or State -->
+                    <label for="province">Province/State:</label>
+                    <input type="text" id="province" name="province" placeholder="Province or State" required />
+                    <br/>
+                    <!-- Postal or Zip Code -->
+                    <label for="postal">Postal/Zip Code:</label>
+                    <input type="text" id="postal" name="postal" placeholder="Postal Code" required />
+                    <br/>
+                    <!-- Country -->
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">United States</option>
+                    </select>
+                </fieldset>
+                <br/>
+
+                <!-- Order Method -->
+                <fieldset>
+                    <legend>Order Method</legend>
+                    <!-- Radial Button Options (Pickup or Delivery) -->
+                    <label><input type="radio" name="order-method" value="pickup" checked /> Pickup</label>
+                    <label><input type="radio" name="order-method" value="delivery" /> Delivery</label>
+                    <br/><br/>
+                    <!-- Delivery Instructions -->
+                    <label for="instructions">Delivery Instructions / Special Requests:</label><br />
+                    <textarea id="instructions" name="instructions" rows="4" cols="40" placeholder="Enter any delivery instructions..."></textarea>
+                </fieldset>
+                <br/>
+
             <!-- Pizza Details -->
                 <!-- Crust -->
                 <!-- Sauce -->
@@ -25,11 +91,14 @@
 
             <!-- Delivery Instructions -->
 
+            </form>   
         </main>
+
         <!-- Footer -->
         <footer>
             <!-- Copyright -->
              <p><small>&copy; 2025 <strong>The HTML Pizza Company</strong> <br>Created by David Dick.</small></p>
         </footer>
+
     </body>
 </html>
