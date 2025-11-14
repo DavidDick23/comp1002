@@ -1,48 +1,78 @@
+@charset "utf-8";
+/* Border Sizing - Best Practice */
+html
+{
+  box-sizing: border-box;
+}
+
+/* Universal Selector */
+* 
+{
+  box-sizing: inherit;
+}
 
 /* STEP 3: Set character encoding (must be first line of file) */
 /* STEP 4a: Set the border properties on the DIV#container - border-width, border-style, border-color */
-div#container {
-
+div#container 
+{
+  border-style: dashed;
+  border-color: orange;
+  border-width: 5px 10px;
+  /* STEP 4b: Control one of the four borders independently of the others - try border-top-style */
+  border-top-style: dotted;
+  /* STEP 4c: Apply shorthand to bottom border (border-bottom-width) using the clock rule (TRBL) */
+  border-bottom: 5px dashed rgb(20, 186, 34);
 }
-/* STEP 4b: Control one of the four borders independently of the others - try border-top-style */
-
-/* STEP 4c: Apply shorthand to bottom border (border-bottom-width) using the clock rule (TRBL) */
 
 /* STEP 5a: Set padding values on the DIV#container element - set individual padding values, then use shorthand with the clock rule again (TRBL) */
-div#container {
-
+div#container 
+{
+  padding: 5%;
+  padding-top: 10%;
   margin: 5% auto;
-
+  background-color: blanchedalmond;
+  /* STEP 5b: Apply a background-image to the same element (controlling background-repeat, background-position, and background-size*/
+  /* background-repeat: repeat-x; */
+  /* background-position: 5px; */
 }
-/* STEP 5b: Apply a background-image to the same element (controlling background-repeat, background-position, and background-size) */
+
 
 /* STEP 5c: Instead, apply the same background-image to the BODY, and apply a background-color to the DIV#container */
-body {
-
+body 
+{
+  background-image: url("../images/stucco.jpg");
   font-size: 150%;
 }
 
 /* STEP 6a: Control the width of the DIV#container with a fixed unit (px) */
-div#container {
-
+div#container 
+{
+  width: 600px;
+  /* STEP 6b: Change the width to a relative unit of measure (%) */
+  width: 75%;
+  /* STEP 6c: Use an elastic unit, instead (em) and change the base font-size on the BODY element */
+  /* width: 50em; */
+  /* STEP 7a: Set the width above back to a fixed unit, then adjust the height so the the content no longer fits */
+  /* width: 600px; */
+  /* height: 500px; */
+  /* STEP 7b: Apply various values to the overflow property to see how to handle content that doesn't fit it's container */
+  overflow: auto;
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
 }
-/* STEP 6b: Change the width to a relative unit of measure (%) */
-
-/* STEP 6c: Use an elastic unit, instead (em) and change the base font-size on the BODY element */
-
-/* STEP 7a: Set the width above back to a fixed unit, then adjust the height so the the content no longer fits */
-
-/* STEP 7b: Apply various values to the overflow property to see how to handle content that doesn't fit it's container */
 
 /* STEP 8a: Change the display property of the H1 EM element to block, then to inline-block (default for EM is inline) */
-h1 em {
-
+h1 em 
+{
+  display: block;
+  /* STEP 8b: Manipulate the visibility of the H1 EM element (visibility and display are different) */
+  /* visibility: hidden; */
 }
-/* STEP 8b: Manipulate the visibility of the H1 EM element (visibility and display are different) */
 
 /* STEP 10: Comment out the width and display settings below for the MAIN SECTION elements, and use Flexbox, instead - set display to 'flex' on the MAIN element (the container of the SECTION elements) - learn more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-main {
-
+main 
+{
+  display: flex;
 }
 
 /* STEP 8c: Set the width of the 3 MAIN SECTION elements to 30% and arrange them with the display property using inline-block to arrange them side-by-side */
@@ -57,3 +87,7 @@ main section:nth-of-type(2) {
 }
 
 /* STEP 9: float the SECTION P IMG element to the left, then right */
+main img
+{
+  float: right;
+}
