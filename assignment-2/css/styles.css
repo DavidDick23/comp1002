@@ -1,8 +1,59 @@
-html {
-    min-height: 340vh;
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.poster-container {
+    width: 800px;               
+    height: 1200px;              
     background-image: url("../images/Background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    position: relative;
+    margin-top: 40px;
 }
 
+.main-cast {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 800px;          
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.cast-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-cast h2 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 2rem;
+    margin: 0;
+    transform: translateY(-40px);
+}
+
+.main-cast h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.3rem;
+    margin: 0;
+    letter-spacing: 1px;
+    transform: scaleY(3) translateY(-5px);
+}
+
+.diamond-spacer {
+    width: 6px;
+    height: 6px;
+    background: black;
+    transform: rotate(45deg);
+}
