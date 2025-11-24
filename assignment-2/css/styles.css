@@ -1,3 +1,4 @@
+/* Formats the body of the visible content */
 body {
     margin: 0;
     display: flex;
@@ -5,6 +6,7 @@ body {
     background: white;
 }
 
+/* Found better results using this than HTML */
 .poster-container {
     width: 800px;               
     height: 1200px;              
@@ -16,6 +18,7 @@ body {
     margin-top: 40px;
 }
 
+/* Positioning of the main cast block */
 .main-cast {
     position: absolute;
     top: 4%;
@@ -29,6 +32,7 @@ body {
     text-align: center;
 }
 
+/* Additonal positiong of each cast block within the main cast block */
 .cast-block {
     display: flex;
     flex-direction: column;
@@ -60,6 +64,7 @@ body {
     transform: rotate(45deg);
 }
 
+/* Formatting for the producer block */
 .producer-block {
     position: absolute;
     top: 65%;              
@@ -83,6 +88,7 @@ body {
     font-style: normal;
 }
 
+/* Main title of movie */
 .title-block h1 {
     position: absolute;
     top: 72%;
@@ -91,7 +97,6 @@ body {
 
     font-family: 'PhuongThao', cursive;
     font-size: 4.5rem;
-
     color: rgb(200, 0, 0);
 
     /* Can't seem to get this working */
@@ -99,6 +104,7 @@ body {
     transform-origin: left center;
 }
 
+/* Contains secondary actors and director */
 footer {
     position: absolute;
     bottom: 12%; 
@@ -108,10 +114,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     text-align: center;
     font-family: "Oswald", sans-serif;
 }
 
+/* First name of secondary actors */
 .second-cast-block h5 {
     font-size: 0.75rem;
     font-weight: 800;
@@ -119,6 +127,7 @@ footer {
     letter-spacing: 1px;
 }
 
+/* Last name of secondary actors */
 .second-cast-block h3 {
     font-size: 1.6rem;
     font-weight: 900;
@@ -126,9 +135,10 @@ footer {
     letter-spacing: 2px;
 }
 
+/* self explanatory */
 .director-block {
     position: absolute;
-    bottom: -40px;   /* adjust if needed */
+    bottom: -40px;   
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -140,6 +150,7 @@ footer {
     
 }
 
+/* "Directed by" text */
 .director-block p {
     font-size: 0.9rem;
     margin: 0;
@@ -148,6 +159,7 @@ footer {
     font-family: "Lucida Handwriting", sans-serif;
 }
 
+/* Director's name */
 .director-block h4 {
     font-size: 1.4rem;
     margin: 0;
