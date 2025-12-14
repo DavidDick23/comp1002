@@ -1,0 +1,176 @@
+/* Imported Fonts */
+/* All Fonts from: https://www.1001fonts.com/renaissance-fonts.html */
+@font-face {
+    font-family: 'Medici Text';
+    src: url('../fonts/medici-text/Medici.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Humanistic';
+    src: url('../fonts/humanistic/Humanistic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Humanistic Cursive';
+    src: url('../fonts/humanistic/HumanisticCursive.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gyre Chorus';
+    src: url('../fonts/tex-gyre-chorus/texgyrechorus.otf') format('truetype');
+}
+
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    line-height: 1.6;
+    /* Image from:http://www.freepik.com">Designed by GarryKillian / Freepik */
+    /* Edited by David Dick using Gimp*/
+    background: url('../images/body-texture-edit.jpg') no-repeat;
+    background-size: cover;
+    color: #333; 
+    padding: 20px;
+}
+
+/* Header */
+header {
+    /* Image from:  https://www.freepik.com/free-photo/fabric-textured-background_3740578.htm#fromView=keyword&page=1&position=22&uuid=88c6baba-a07b-4db9-a19a-e0f7044ce906&query=Gold+linen+background*/
+    background: url('../images/header-footer-textured.jpg') no-repeat;
+    background-size: cover;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Main */
+main {
+    margin-top: 20px;
+    font-family: 'Humanistic';
+    font-size: 1.5em;
+    /* Image from: https://www.freepik.com/free-photo/paper-texture_1034617.htm#fromView=search&page=1&position=0&uuid=4ee1a96a-a9ee-42af-9a09-da25226154a4&query=paper+texture+seamless */
+    background: url('../images/parchment-texture.jpg') no-repeat;
+    background-size: cover;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+/* Titles */
+h1, h2, h3 {
+    font-family: 'Gyre Chorus';
+}
+
+h3 {
+    display: flex;
+}
+
+img {
+    padding: 10px;
+}
+
+/* Lists */
+li {
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    font-family: 'Humanistic Cursive';
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    /* Image from:  https://www.freepik.com/free-photo/fabric-textured-background_3740578.htm#fromView=keyword&page=1&position=22&uuid=88c6baba-a07b-4db9-a19a-e0f7044ce906&query=Gold+linen+background*/
+    background: url('../images/header-footer-textured.jpg') no-repeat;
+    background-size: cover;
+    color: #000000; 
+    border-radius: 5px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    font-family: 'Medici Text';
+    font-size: 2em;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+nav a {
+    background: #a79d54;  
+    color: #8B4513;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background: #D6C435; 
+    color: #8B4513;
+    }
+
+nav a:hover {
+    background: #f7de25; 
+    color: #8B4513; 
+}
+
+/* About Section Layout */
+section {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+article {
+    flex: 2; 
+    margin-bottom: 20px; 
+}
+
+aside {
+    flex: 1; 
+    /* Image from: https://www.freepik.com/free-photo/paper-texture_1034617.htm#fromView=search&page=1&position=0&uuid=4ee1a96a-a9ee-42af-9a09-da25226154a4&query=paper+texture+seamless */
+    background: url('../images/paper-texture.jpg') no-repeat;
+    background-size: cover;
+    border-left: 4px solid #8B4513;
+    padding: 15px;
+}
+
+aside h2 {
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+aside p {
+    font-family: 'Humanistic Cursive';
+    font-size: 1.3em;
+    line-height: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0; 
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    aside {
+        padding: 10px;
+    }
+
+    article {
+        margin-bottom: 10px;
+    }
+}

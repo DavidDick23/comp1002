@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Meta Data -->
+    <head>
+        <!-- Configuration -->
+        <meta charset="utf-8"/>
+
+        <!-- Site Details -->
+        <title>Project1</title>
+        <meta name="author" content="David Dick"/>
+        <meta name="description" content="Site Detialed Info Here"/>
+
+        <!-- CSS & JS -->
+        <link rel="stylesheet" href="css/styles.css"/>
+        <script src="js/main.js" defer></script>
+    </head>  
+
+    <!-- Visible Content -->
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Page Navigation -->
+             <nav>
+                <a href="index.html">Ye Homestead</a>
+                <a href="products.html">Ye Noble Goods</a>
+                <a href="about.html">Our Tale</a>
+                <a href="support.html">Seekith Assistance</a>
+             </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Contact Form -->
+            <section>      
+
+                <!-- Form Information -->
+                <h2>Seekith Assistance?</h2>
+                <p>Shouldst thou have inquiries or require aid, do not hesitate to reach out to us. Fill in the form below and send it by electronic carrier pigeon, and we shall respond with haste.</p>
+                <img src="./images/pigeon.png" alt="Carrier Pigeon" style="width:300px;height:300px;"/>
+                
+                <!-- Form Body -->
+                <form action="mailto:support@thenoblebreechery.com" method="post" enctype="text/plain">
+                    <!-- Name Field -->
+                    <div>
+                        <label for="name">Thy Name:</label>
+                        <input type="text" id="name" name="name" required/>
+                    </div>
+                    
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email">Thy Email:</label>
+                        <input type="email" id="email" name="email" required/>
+                    </div>
+                    
+                    <!-- Subject Field -->
+                    <div>
+                        <label for="subject">Subject of thy Missive:</label>
+                        <input type="text" id="subject" name="subject" required/>
+                    </div>
+                    
+                    <!-- Message Text Box -->
+                    <div>
+                        <label for="message">Thy Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit">Send Thy Message</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Copywrite -->
+            <p>&copy; 1590 The Noble Breechery. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
